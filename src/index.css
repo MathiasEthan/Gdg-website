@@ -77,11 +77,11 @@
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
+  --background: #050505;
   --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
+  --card: #0a0a0a;
   --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
+  --popover: #0a0a0a;
   --popover-foreground: oklch(0.985 0 0);
   --primary: oklch(0.922 0 0);
   --primary-foreground: oklch(0.205 0 0);
@@ -108,6 +108,27 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+}
+
+/* Google Brand Colors */
+.text-google-blue { color: #4285F4; }
+.text-google-red { color: #EA4335; }
+.text-google-yellow { color: #FBBC05; }
+.text-google-green { color: #34A853; }
+
+.bg-google-blue { background-color: #4285F4; }
+.bg-google-red { background-color: #EA4335; }
+.bg-google-yellow { background-color: #FBBC05; }
+.bg-google-green { background-color: #34A853; }
+
+/* Sticker Styles */
+.sticker-image {
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.4));
+  transition: transform 0.3s ease;
+}
+
+.sticker-image:hover {
+  transform: scale(1.05);
 }
 
 @layer base {

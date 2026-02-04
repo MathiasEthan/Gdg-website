@@ -1,14 +1,13 @@
 // src/App.tsx
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/custom/navbar'; 
 import Home from './pages/home';         
 
-const App: React.FC = () => {
+const App = () => {
   return (
     <Router>
-      <Navbar /> 
-      <div className="container"> 
+      <div className="min-h-screen bg-[#050505]">
+        <Navbar /> 
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
